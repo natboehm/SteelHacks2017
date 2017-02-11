@@ -28,29 +28,29 @@ num_clicks = 0;
 function countClicks() {
     num_clicks++;
     getClickTime();
-    ratio = ((currClickTime / lastClickTime) - 1) * 1000000000;
+    ratio = ((currClickTime / lastClickTime) - 1) * 1000000000000;
     console.log(ratio);
 
     /* excited dog */
-    if (ratio < 1) {
+    if (ratio < 500) {
         if (document.getElementById("animation").style.backgroundImage!='url(/images/revised_series.png') {
             happyDog();
         }
     } 
     /* neutral dog */
-    else if (ratio > 1 && ratio < 30) {
+    else if (ratio >= 500 && ratio < 10000) {
         if (document.getElementById("animation").style.backgroundImage!='url/images/neutral_series.png') {
             neutralDog();
         }
     } 
     /* sad dog */
-    else if (ratio > 20 && ratio < 50) {
+    else if (ratio >= 10000 && ratio < 20000) {
         if (document.getElementById("animation").style.backgroundImage!='url/images/sad_series.png') {
             sadDog();
         }
     } 
     /* ded dog */
-    else if (ratio > 50) {
+    else if (ratio >= 20000 && ratio < Infinity) {
         if (document.getElementById("animation").style.backgroundImage!='url/images/ded_series.png') {
             dedDog();
         }

@@ -3,7 +3,7 @@
     background-repeat: no-repeat;
     height: 514px;
     width: 2000px;
-    margin-left: 10%;
+    margin-left: 5%;
     cursor: -webkit-grab;
 }
 
@@ -33,6 +33,6 @@ h1 {
 #logo {
     display: none;
     position: absolute;
-    right: 0px;
+    right: 40px;
     bottom: 40px;
 }
