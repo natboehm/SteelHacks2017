@@ -21,7 +21,7 @@ function getClickTime() {
 }
 
 function happyDog() {
-    document.getElementById("animation").style.backgroundImage="url(/images/revised_series.png)";
+    document.getElementById("animation").style.backgroundImage="url(/SteelHacks2017/images/revised_series.png)";
 }
 
 num_clicks = 0;
@@ -33,40 +33,40 @@ function countClicks() {
 
     /* excited dog */
     if (ratio < 500) {
-        if (document.getElementById("animation").style.backgroundImage!='url(/images/revised_series.png') {
+        if (document.getElementById("animation").style.backgroundImage!='url(/SteelHacks2017/images/revised_series.png') {
             happyDog();
         }
     } 
     /* neutral dog */
     else if (ratio >= 500 && ratio < 10000) {
-        if (document.getElementById("animation").style.backgroundImage!='url/images/neutral_series.png') {
+        if (document.getElementById("animation").style.backgroundImage!='url(/SteelHacks2017/images/neutral_series.png)') {
             neutralDog();
         }
     } 
     /* sad dog */
     else if (ratio >= 10000 && ratio < 20000) {
-        if (document.getElementById("animation").style.backgroundImage!='url/images/sad_series.png') {
+        if (document.getElementById("animation").style.backgroundImage!='url(/SteelHacks2017/images/sad_series.png)') {
             sadDog();
         }
     } 
     /* ded dog */
     else if (ratio >= 20000 && ratio < Infinity) {
-        if (document.getElementById("animation").style.backgroundImage!='url/images/ded_series.png') {
+        if (document.getElementById("animation").style.backgroundImage!='url(SteelHacks2017/images/ded_series.png)') {
             dedDog();
         }
     }
 }
 
 function neutralDog() {
-    document.getElementById("animation").style.backgroundImage="url(/images/neutral_series.png)";
+    document.getElementById("animation").style.backgroundImage="url(/SteelHacks2017/images/neutral_series.png)";
 }
 
 function sadDog() {
-    document.getElementById("animation").style.backgroundImage="url(/images/sad_series.png)";
+    document.getElementById("animation").style.backgroundImage="url(/SteelHacks2017/images/sad_series.png)";
 }
 
 function dedDog() {
-    document.getElementById("animation").style.backgroundImage="url(/images/ded_series.png)";
+    document.getElementById("animation").style.backgroundImage="url(/SteelHacks2017/images/ded_series.png)";
 }
 
 function myFunction() {
