@@ -2,27 +2,19 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="styles/index.css">
+        <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet">
     </head>
     <body>
         <script src="scripts/index.js"></script>
+        
         <h1>Pepe, the Hypoallergenic Therapy Dog</h1>
+        
         <div id="animation" onclick="countClicks()"></div>
-        <!--<div><img id="logo" src="images/me.gif" alt="logo" height=200 width=200 /></div>-->
+        
+        <div><img id="logo" src="images/me.gif" alt="logo" height=200 width=200 /></div>
 
-		<!--<element onclick=">
-		<button onclick="document.getElementById('images/me.gif')">Who's a good boy?</button>-->
-		<button onclick="myFunction()">Who's a good boy?</button>
-		
-		<script>
-		function myFunction() {
-			var x = document.getElementById('logo');
-			if (x.style.display === 'block') {
-				x.style.display = 'none';
-			} else {
-				x.style.display = 'block';
-			}
-        }
-
-		</script>
+        <div class="wrapper">
+            <button class="button" onclick="myFunction()">Who's a good boy?</button>
+        </div>
     </body>
 </html>

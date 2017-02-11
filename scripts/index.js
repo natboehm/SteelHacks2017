@@ -1,35 +1,79 @@
-function startAnimation() {
-    console.log("animation started");
-    var frameHeight = 510;
+var timer;
+
+onload = function startAnimation() {
+    var frameHeight = 514;
     var frames = 8;
     var frame = 0;
 
     var div = document.getElementById("animation");
-    setInterval(function() {
+    timer = setInterval(function() {
         var frameOffset = (++frame % frames) * -frameHeight;
         div.style.backgroundPosition = "0px " + frameOffset + "px";
-        console.log("hello");
-    }, 100);
-    
+    }, 100); 
 }
 
-function swap() {
-    document.getElementById("animation").style.backgroundImage="url(/images/series_of_dogs.png)";
-    startAnimation();
+var currClickTime = 0;
+var lastClickTime = 0;
+
+function getClickTime() {
+    lastClickTime = currClickTime;
+    currClickTime = Date.now();
+}
+
+function happyDog() {
+    document.getElementById("animation").style.backgroundImage="url(/images/revised_series.png)";
 }
 
 num_clicks = 0;
 function countClicks() {
     num_clicks++;
+    getClickTime();
+    ratio = ((currClickTime / lastClickTime) - 1) * 1000000000;
+    console.log(ratio);
 
-    if (num_clicks > 10) {
-        swap();
+    /* excited dog */
+    if (ratio < 1) {
+        if (document.getElementById("animation").style.backgroundImage!='url(/images/revised_series.png') {
+            happyDog();
+        }
+    } 
+    /* neutral dog */
+    else if (ratio > 1 && ratio < 30) {
+        if (document.getElementById("animation").style.backgroundImage!='url/images/neutral_series.png') {
+            neutralDog();
+        }
+    } 
+    /* sad dog */
+    else if (ratio > 20 && ratio < 50) {
+        if (document.getElementById("animation").style.backgroundImage!='url/images/sad.png') {
+            sadDog();
+        }
+    } 
+    /* ded dog */
+    else if (ratio > 50) {
+        if (document.getElementById("animation").style.backgroundImage!='url/images/ded.png') {
+            dedDog();
+        }
     }
 }
 
-/*
-onclick = function tricks() {
-	var imag = document.getElementById("image");
-	img.src = "../images/me.gif";
-	return false;
-}*/ 
+function neutralDog() {
+    document.getElementById("animation").style.backgroundImage="url(/images/neutral_series.png)";
+}
+
+function sadDog() {
+    document.getElementById("animation").style.backgroundImage="url(/images/sad.png)";
+}
+
+function dedDog() {
+    document.getElementById("animation").style.backgroundImage="url(/images/ded.png)";
+}
+
+function myFunction() {
+    var x = document.getElementById('logo');
+    if (x.style.display === 'block') {
+	    x.style.display = 'none';
+	} else {
+	    x.style.display = 'block';
+	}
+}

@@ -1,37 +1,38 @@
 #animation {
-    background-image: url("/images/neutral.png");
+    background-image: url("/images/neutral_series.png");
     background-repeat: no-repeat;
-    height: 510px;
+    height: 514px;
     width: 2000px;
+    margin-left: 10%;
+    cursor: -webkit-grab;
 }
 
-/*#meAnimation {
-	background-image: url("../images/me.gif");
-    background-repeat: no-repeat;
-    height: 510px;
-    width: 2000px;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
+body {
+    font-family: 'Barrio', cursive;
+    font-size: 130%;
 }
 
-li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
+h1 {
+    text-align: center;
 }
 
-li a.active {
-    background-color: #4CAF50;
+.wrapper {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.button {
+    font-size: 24px;
+    padding: 12px 28px;
+    background-color: #195de0;
+    border: none;
     color: white;
+    cursor: pointer;
 }
 
-li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-}*/
+#logo {
+    display: none;
+    position: absolute;
+    right: 0px;
+    bottom: 40px;
+}
