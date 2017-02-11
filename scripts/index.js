@@ -8,4 +8,11 @@ onload = function startAnimation() {
         var frameOffset = (++frame % frames) * -frameHeight;
         div.style.backgroundPosition = "0px " + frameOffset + "px";
     }, 100);
+    
 }
+/*
+onclick = function tricks() {
+	var imag = document.getElementById("image");
+	img.src = "../images/me.gif";
+	return false;
+}*/ 

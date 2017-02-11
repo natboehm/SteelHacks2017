@@ -1,6 +1,17 @@
 #animation {
-    background-image: url("/images/series_of_dogs.png");
+    background-image: url("../images/series_of_dogs.png");
     background-repeat: no-repeat;
     height: 510px;
     width: 2000px;
+}
+#meAnimation {
+	background-image: url("../images/me.gif");
+    background-repeat: no-repeat;
+    height: 510px;
+    width: 2000px;
+}
+ul { 
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
