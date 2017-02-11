@@ -45,13 +45,13 @@ function countClicks() {
     } 
     /* sad dog */
     else if (ratio > 20 && ratio < 50) {
-        if (document.getElementById("animation").style.backgroundImage!='url/images/sad.png') {
+        if (document.getElementById("animation").style.backgroundImage!='url/images/sad_series.png') {
             sadDog();
         }
     } 
     /* ded dog */
     else if (ratio > 50) {
-        if (document.getElementById("animation").style.backgroundImage!='url/images/ded.png') {
+        if (document.getElementById("animation").style.backgroundImage!='url/images/ded_series.png') {
             dedDog();
         }
     }
@@ -62,11 +62,11 @@ function neutralDog() {
 }
 
 function sadDog() {
-    document.getElementById("animation").style.backgroundImage="url(/images/sad.png)";
+    document.getElementById("animation").style.backgroundImage="url(/images/sad_series.png)";
 }
 
 function dedDog() {
-    document.getElementById("animation").style.backgroundImage="url(/images/ded.png)";
+    document.getElementById("animation").style.backgroundImage="url(/images/ded_series.png)";
 }
 
 function myFunction() {
